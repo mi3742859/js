@@ -1,0 +1,23 @@
+var scope="gl"
+function ch(){
+    var scope="cb"
+    function ne(){
+        var scope="ne"
+        return scope
+    }
+    return ne()
+}
+ch()//ne
+
+
+//
+function test(o){
+    var i=0;
+    if(typeof o=="object"){
+        var j=0;
+        for(var k=0;k<10;k++){
+            console.log(k)
+        }
+        console.log(k)
+    }
+    console.log(j)
